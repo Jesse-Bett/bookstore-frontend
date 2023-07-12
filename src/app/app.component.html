@@ -1,22 +1,23 @@
-<app-dashboard></app-dashboard> <!-- Dashboard Component -->
+<app-dashboard></app-dashboard>
+<!-- Dashboard Component -->
 
-<div>
-    <h1>Bookstore Inventory</h1>
-    <table>
-      <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Quantity</th>
-        <th>Action</th>
-      </tr>
-      <tr *ngFor="let book of books">
-        <td>{{ book.title }}</td>
-        <td>{{ book.author }}</td>
-        <td>{{ book.quantity }}</td>
-        <td>
-          <button (click)="decrementQuantity(book)">-</button>
-          <button (click)="incrementQuantity(book)">+</button>
-        </td>
-      </tr>
-    </table>
-  </div>
+<!-- <div>
+  <h1>Bookstore Inventory</h1>
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Quantity</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let book of books">
+      <td>{{ book.title }}</td>
+      <td>{{ book.author }}</td>
+      <td>{{ book.quantity }}</td>
+      <td>
+        <button (click)="decrementQuantity(book)">-</button>
+        <button (click)="incrementQuantity(book)">+</button>
+      </td>
+    </tr>
+  </table>
+</div> -->

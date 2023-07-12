@@ -1,11 +1,61 @@
-<div>
-    <h1>Dashboard</h1>
-    <div class="cards-container">
-      <div class="card" *ngFor="let widget of widgets">
-        <h2>{{ widget.title }}</h2>
-        <p>{{ widget.description }}</p>
-        <button (click)="navigateToWidget(widget)">View Details</button>
-      </div>
-    </div>
-  </div>
-  
+<html>
+  <head> </head>
+  <body>
+    <div class="area"></div>
+    <nav class="main-menu">
+      <ul>
+        <li>
+          <a href="https://jbfarrow.com">
+            <i class="fa fa-home fa-2x"></i>
+            <span class="nav-text"> Home </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-book fa-2x"></i>
+            <span class="nav-text"> All books </span>
+          </a>
+        </li>
+        <li class="has-subnav">
+          <a href="#">
+            <i class="fa fa-users fa-2x"></i>
+            <span class="nav-text"> All Authors </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-archive fa-2x"></i>
+            <span class="nav-text"> Stocks </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-cogs fa-2x"></i>
+            <span class="nav-text"> Tools & Resources </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-map-marker fa-2x"></i>
+            <span class="nav-text"> Member Map </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-info fa-2x"></i>
+            <span class="nav-text"> Documentation </span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="logout">
+        <li>
+          <a href="#">
+            <i class="fa fa-power-off fa-2x"></i>
+            <span class="nav-text"> Logout </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
